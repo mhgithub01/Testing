@@ -1,31 +1,40 @@
 *{
     box-sizing: border-box;
 }
-    
-    
-    body{
-    background-color: aqua;
-}
-
-
-h1{
-color: cadetblue;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.box{
-width: 100px;
-height: 100px;
-color: #fff;
-text-align: center;
-line-height: 6;
-border: 2px solid black;
-background-color: tomato;
-
-}
-.boxes{
+.gallery{
 display: flex;
+flex-wrap: wrap;
 
+.main-heading{
+text-align: center;
+}
+}
 
+.column{
+
+    max-width: 50%;
+    flex: 25%;
+    padding: 4px;
 
 }
+.column img{
+    width: 100px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    }
+@media all and (max-width: 960px) {
+    .column{
+        max-width: 100%;
+        flex: 100%;
+    
+    }
+}
+
+
+
+
+
+
+
+
